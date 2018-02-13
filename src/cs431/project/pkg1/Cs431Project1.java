@@ -1,13 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package cs431.project.pkg1;
 
+import java.util.LinkedHashMap;
+
 /**
- *
- * @author Josh
+ * CS431 Project 1 - Scheduling Algorithms
+ * @author Joshua Camacho
  */
 public class Cs431Project1 {
 
@@ -16,6 +13,14 @@ public class Cs431Project1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        LinkedHashMap<String,Integer> m = new LinkedHashMap<String, Integer>();
+        m.put("job1", 4);
+        m.put("job2", 1);
+        m.put("job3", 10);
+        m.put("job4", 7);
+        ScheduleAlgorithm test = new FirstComeFirstServe(m);
+        test.execute();
+        
     }
     
 }
