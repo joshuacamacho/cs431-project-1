@@ -10,10 +10,10 @@ import java.util.Map;
  * @author Josh
  */
 public abstract class ScheduleAlgorithm {
-    private Map m;
+    protected Map m;
     private String jobName;
     private int jobWeight;
-    private Iterator it;
+    protected Iterator it;
     protected int totalCompletionTime;
     private int totalJobs;
     protected int time;
@@ -55,6 +55,7 @@ public abstract class ScheduleAlgorithm {
    }
    
    public void removeJob(){
+       totalCompletionTime+=time;
        it.remove();
    }
    

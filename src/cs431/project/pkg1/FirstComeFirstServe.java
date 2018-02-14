@@ -15,8 +15,9 @@ public class FirstComeFirstServe extends ScheduleAlgorithm{
     
     @Override
     void execute() {
+        System.out.println("-------------------------\nFirst Come First Serve");
         while(nextJob()){
-            this.addToChart(getJob() + " " + time); 
+            this.addToChart("["+getJob() + "]" + time); 
             while(getJobValue()>0){
                 int value = getJobValue();
                 this.addToChart("-");
@@ -25,12 +26,12 @@ public class FirstComeFirstServe extends ScheduleAlgorithm{
                 this.setJobValue(value);
             }
             this.addToChart(time+ " ");
-            totalCompletionTime+=time;
             this.removeJob();
             
         }
         System.out.println(this.getChart());
-        System.out.println("Ave Completion time = "+ this.getAverage());
+        System.out.println("Ave Completion time = "+ this.getAverage()
+                +"\n--------------------------\n");
     }
     
 }
