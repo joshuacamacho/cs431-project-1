@@ -38,9 +38,7 @@ public class RoundRobin extends ScheduleAlgorithm{
             if(getJobValue()==0) this.removeJob();
         }
         
-        System.out.println(this.getChart());
-        System.out.println("Ave Completion time = "+ this.getAverage()
-        +"\n--------------------------\n");
+        this.printStats();
     }
     
 }

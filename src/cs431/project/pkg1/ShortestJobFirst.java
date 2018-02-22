@@ -19,7 +19,7 @@ public class ShortestJobFirst extends ScheduleAlgorithm {
         LinkedHashMap<String, Integer> sorted = new LinkedHashMap<String, Integer>();
        this.m.entrySet().stream()
         .sorted(Map.Entry.<String, Integer>comparingByValue()) 
-        .limit(10) 
+        .limit(1000) 
         .forEach((entry)->{
             String[] split = entry.toString().split("=");
             sorted.put(split[0], Integer.parseInt(split[1]));
@@ -46,9 +46,7 @@ public class ShortestJobFirst extends ScheduleAlgorithm {
             this.removeJob();
         }
         
-        System.out.println(this.getChart());
-        System.out.println("Ave Completion time = "+ this.getAverage()
-        +"\n--------------------------\n");
+        this.printStats();
     }
     
 }

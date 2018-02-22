@@ -5,7 +5,9 @@
         <group>
             <file>file:/C:/Users/Josh/Desktop/git/cs431-project-1/src/cs431/project/pkg1/Cs431Project1.java</file>
             <file>file:/C:/Users/Josh/Desktop/git/cs431-project-1/src/cs431/project/pkg1/ScheduleAlgorithm.java</file>
+            <file>file:/C:/Users/Josh/Desktop/git/cs431-project-1/src/cs431/project/pkg1/ShortestJobFirst.java</file>
             <file>file:/C:/Users/Josh/Desktop/git/cs431-project-1/src/cs431/project/pkg1/FirstComeFirstServe.java</file>
+            <file>file:/C:/Users/Josh/Desktop/git/cs431-project-1/src/cs431/project/pkg1/RoundRobin.java</file>
         </group>
     </open-files>
 </project-private>
